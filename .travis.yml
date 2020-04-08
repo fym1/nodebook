@@ -3,6 +3,7 @@ node_js:
   - "node"
 
 after_script:
+  - grunt lint
   - grunt build
   - cd ./dist
   - git init

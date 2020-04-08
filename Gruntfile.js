@@ -85,6 +85,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-usemin');
 
-  // grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
+  grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
   grunt.registerTask('build', ['copy:html', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'htmlmin', 'imagemin', 'clean:end','htmlhint', 'csslint', 'eslint']);
 };
