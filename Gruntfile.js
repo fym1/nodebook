@@ -5,19 +5,19 @@ module.exports = function (grunt) {
       options: {
         htmlhintrc: '.htmlhintrc'
       },
-      src: ['*.html', './com/**/*.html']
+      src: ['*.html', './dlg-font/*.html', './editer/*.html', './list/*.html', './menubar/*.html']
     },
     csslint: {
       options: {
         csslintrc: '.csslintrc'
       },
-      src: ['css/*.css', './com/**/*.css']
+      src: ['css/*.css', './dlg-font/*.css', './editer/*.css', './list/*.css', './menubar/*.css', './commoncss/*.css']
     },
     eslint: {
       options: {
         configFile: '.eslintrc.json'
       },
-      target: ['./js/*.js', './com/**/*.js']
+      target: ['./js/*.js', './dlg-font/*.js', './editer/*.js', './list/*.js', './menubar/*.css', './commonjs/*.js']
     },
     htmlmin: {
       options: {
@@ -44,11 +44,11 @@ module.exports = function (grunt) {
     },
     concat: {
       js: {
-        src: ['js/*.js', './com/**/*.js'],
+        src: ['./dlg-font/*.js', './editer/*.js', './list/*.js', './menubar/*.js', './commonjs/*.js'],
         dest: 'dist/bundle.js'
       },
       css: {
-        src: ['css/*.css', './com/**/*.css'],
+        src: ['./dlg-font/*.css', './editer/*.css', './list/*.css', './menubar/*.css', './commoncss/*.css'],
         dest: 'dist/bundle.css'
       }
     },
@@ -86,5 +86,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-usemin');
 
   grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
-  grunt.registerTask('build', ['copy:html', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'htmlmin', 'imagemin', 'clean:end','htmlhint', 'csslint', 'eslint']);
+  grunt.registerTask('build', ['copy:html', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'htmlmin', 'imagemin', 'clean:end']);
 };
