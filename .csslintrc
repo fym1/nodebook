@@ -2,5 +2,6 @@
     "order-alphabetical": false,
     "box-model": false,
     "outline-none": false,
-    "box-sizing": false
+    "box-sizing": false,
+    "parser": "babel-eslint"
 }

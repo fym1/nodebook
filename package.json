@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/fym1/nodebook#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "grunt": "^1.0.1",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",

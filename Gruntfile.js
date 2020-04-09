@@ -17,7 +17,7 @@ module.exports = function (grunt) {
       options: {
         configFile: '.eslintrc.json'
       },
-      target: ['./js/*.js', './dlg-font/*.js', './editer/*.js', './list/*.js', './menubar/*.css', './commonjs/*.js']
+      target: ['./js/*.js', './dlg-font/*.js', './editer/*.js', './list/*.js', './menubar/*.css']
     },
     htmlmin: {
       options: {

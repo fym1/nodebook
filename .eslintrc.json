@@ -24,10 +24,6 @@
     "semi": [
       "error",
       "always"
-    ],
-    "no-console": [
-      "error",
-      { "allow": ["error"] }
     ]
   }
 }
